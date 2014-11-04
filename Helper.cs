@@ -80,7 +80,8 @@ namespace MysticalMagics
             codeEntity.velocity.Y = distanceY * 5f / totalDistance * chargeSpeed;
         }
 
-        /*  Checks if an npc is in a certain range of the player.
+        /*
+         * Checks if an npc is in a certain range of the player.
          *  target: The target of the npc
          *  npc: the npc itsself.
          *  range: the distance you want to check.

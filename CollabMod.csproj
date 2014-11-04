@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>9fd87885-4c42-4341-9859-685e7b5e36db</ProjectGuid>
+    <ProjectGuid>{B998EB0C-E9BF-4FFD-8E55-2423ABDF10BA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CollabMod</RootNamespace>
