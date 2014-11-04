@@ -1,0 +1,20 @@
+﻿{
+    "displayName": "Eyerok",
+    "size": [ 32, 96 ],
+    "texture": "Textures/NPCs/Eyerok2",
+    "scale": 2,
+    "frameCount": 1,
+    "value": [ 0, 2, 0, 0 ],
+    "aiStyle": -1,
+    "lifeMax": 15000,    //TODO: fix life (add a 0)
+    "boss": true,
+    "noGravity": true,
+    "noTileCollide": true,
+    "soundHit": 3,
+    "soundKilled": 19,
+    "damage": 70,
+    "defense": 12,
+    "knockbackResist": 0,
+    "buffImmune": [ 24 ],
+    "npcSlots": 3
+}
