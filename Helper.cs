@@ -14,10 +14,14 @@ namespace MysticalMagics
     class Helper
     {
         /*
-         *  Gets the rotation to its target.
-         *  @Param pos: 4 possible ints
-         *  use 0 when charging a target
-         *  using 2 when shooting a projectile at the player
+         * Gets the rotation to its target.
+         * one for each 90d turn, not in order though
+         *  
+         * this may or may not be correct:
+         * use pos 0 if the npc's texture is facing down.
+         * use pos 1 if the npc's texture is facing up.
+         * use pos 2 if the npc's texture is facing left(?)
+         * use pos 3 if the npc's texture is facing right(?)
          */
         public static float GetRotation(Player target, NPC npc, int pos)
         {
@@ -41,22 +45,10 @@ namespace MysticalMagics
         }
 
         /*
-         *  Charges the Target.
-         *  @Param target: the player the npc is targeting.
-         *  @Param npc: the npc.
-         *  @Param speed: the speed at which to charge. 
-         *  
-         *  Sometimes doesn't work properly, not sure why :s
-         */
-        public static void ChargeTarget(Player target, NPC npc, float speed)
-        {
-            float rot = GetRotation(target, npc, 2);
-
-            npc.velocity.X = (float)Math.Cos(rot) * -speed;
-            npc.velocity.Y = (float)Math.Sin(rot) * -speed;
-        }
-        /*
-         * use this one instead
+         * Charges at the player
+         * codeEntity: what you want to have charge the target
+         * target: the player
+         * chargeSpeed: the speed at which the charging happens
          */
         public static void chargeTarget(CodableEntity codeEntity, Player target, float chargeSpeed)
         {
@@ -71,6 +63,12 @@ namespace MysticalMagics
             codeEntity.velocity.Y = distanceY * 5f / totalDistance * chargeSpeed;
         }
 
+        /*
+         * Charges at a location
+         * codeEntity: what will charge the position
+         * position: the position to charge
+         * chargeSpeed: how fast it goes
+         */
         public static void chargePosition(CodableEntity codeEntity, Vector2 position, float chargeSpeed)
         {
             float distanceX = position.X - codeEntity.Center.X;  //get distance from the target
@@ -83,10 +81,10 @@ namespace MysticalMagics
         }
 
         /*  Checks if an npc is in a certain range of the player.
-         *  @Param target: The target of the npc
-         *  @Param npc: the npc itsself.
-         *  @Param range: the distance you want to check.
-         *  @Param inout: whether or not to check if the target is inside the range our outside the range.
+         *  target: The target of the npc
+         *  npc: the npc itsself.
+         *  range: the distance you want to check.
+         *  insideRange: whether or not to check if the target is inside the range our outside the range.
          */
         public static bool IsInRange(Player target, CodableEntity npc, int range, bool insideRange)
         {
@@ -105,7 +103,7 @@ namespace MysticalMagics
         }
 
         /*
-         *  Slows down the npc.
+         *  Slows down the npc by a given value.
          */
         public static void SlowDown(CodableEntity codeEnt, float speed = 0.98f)
         {
@@ -113,6 +111,14 @@ namespace MysticalMagics
             codeEnt.velocity.Y *= speed;
         }
 
+        /*
+         * moves the npc to a location.
+         * Pretty much just uses vanilla code, so may not be really efficent
+         * codeEntity: the thing that'll be moving to the location
+         * location: where you want it to move
+         * movement: how fast it moves to the location
+         * mult: tbh, not entirely sure what this does. you probably shouldn't mess with it.
+         */
         public static void MoveToLocation(CodableEntity codeEntity, Vector2 location, float movement = 0.07f, float mult = 6f)  //copied mostly from terraria's source code, EoC
         {
             float distX = location.X - codeEntity.Center.X;
@@ -160,24 +166,6 @@ namespace MysticalMagics
                         codeEntity.velocity.Y -= movement;
                     }
                 }
-            }
-        }
-
-        public static void SlowDown(Projectile proj, float speed = 0.98f)
-        {
-            proj.velocity.X *= speed;
-            proj.velocity.Y *= speed;
-        }
-
-        /*
-         *  Kills the npc if it's active and its life is greater than 0.
-         */
-        public static void SetDead(NPC npc)
-        {
-            if (npc.active && npc.life > 0)
-            {
-                npc.active = false;
-                npc.checkDead();
             }
         }
     }
