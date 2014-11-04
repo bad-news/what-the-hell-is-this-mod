@@ -1,0 +1,14 @@
+{
+	"displayName": "To be Implemented",
+	"size": [24,24],
+	"maxStack": 999,
+	"value": [0,0,0,0],	
+	"rare": 1,
+	"tooltip": "This Item has not yet been Implemented.",
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

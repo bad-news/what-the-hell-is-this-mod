@@ -1,0 +1,26 @@
+{
+	"displayName": "Energized Claw",
+	"size": [26,28],
+	"maxStack": 1,
+	"value": [99,0,0,0],	
+	"rare": 8,
+	"tooltip": "",
+	"useStyle": 1,
+	"useAnimation": 4,
+	"useTime": 4,
+	"damage": 53,
+	"knockBack": 6,
+	"useSound": 1,
+	"autoReuse": true,
+	"useTurn": true,
+	"melee": true,
+	"pick": 220,
+	"axe": 220,
+	
+	"recipes":
+	[{
+		"items": { "Shroomite Digging Claw": 1,"Mechanical Glove": 1,"Bladed Glove": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

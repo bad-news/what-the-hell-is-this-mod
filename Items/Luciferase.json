@@ -1,0 +1,24 @@
+{
+	"displayName": "Luciferase",
+	"size": [18,16],
+	"maxStack": 999,
+	"value": [0,0,1,50],	
+	"rare": 1,
+	"tooltip": "An enezyme that can produce light.",
+	"recipes":
+	[{
+		"items": { "Firefly": 12 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	},
+{
+		"items": { "Glowing Mushroom": 18 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	},
+{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

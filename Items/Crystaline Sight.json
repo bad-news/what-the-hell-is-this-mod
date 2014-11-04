@@ -1,0 +1,14 @@
+{
+	"displayName": "Crystaline Sight",
+	"size": [40,38],
+	"maxStack": 1,
+	"value": [0,20,0,0],	
+	"rare": 6,
+	"tooltip": "It looks for you, so you don't have to.",
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

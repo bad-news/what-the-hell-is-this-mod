@@ -1,0 +1,24 @@
+{
+	"displayName": "Beating Stick 2.0",
+	"size": [32,50],
+	"maxStack": 1,
+	"value": [0,0,2,50],	
+	"rare": 3,
+	"useStyle": 1,
+	"useAnimation": 35,
+	"useTime": 35,
+	"damage": 57,
+	"knockback": 14,
+	"useSound": 1,
+	"autoReuse": false,
+	"useTurn": true,
+	"melee": true,	
+
+	
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

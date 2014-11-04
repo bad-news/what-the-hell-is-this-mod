@@ -1,0 +1,18 @@
+{
+	"displayName": "Frostguard",
+	"size": [28,38],
+	"maxStack": 1,	
+	"value": [10,0,0,0],
+	"rare": 8,
+	"tooltip": [ "Absorbs 25% of damage done to players on your team when above 25% life", "Puts a shell around the owner when below 25% life", "Grants immunity to knockback", "Grants immunity to Chilled debuff"],
+	"defense": 10,
+	"accessory": true,
+	"textureFront":"Items/Frostguard_Front",
+	
+	"recipes":
+	[{
+		"items": { "Paladin's Shield": 1, "Frozen Turtle Shell": 1, "Hand Warmer": 1, "Frost Core":1 }, 
+		"tiles": [ "Tinkerer's Workshop" ], 
+		"creates": 1	
+	}]	
+}

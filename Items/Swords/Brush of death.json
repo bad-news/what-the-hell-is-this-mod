@@ -1,0 +1,24 @@
+{
+	"displayName": "Brush of Death",
+	"size": [16,16],
+	"maxStack": 1,
+	"value": [0,0,0,5],	
+	"rare": 1,
+	"useStyle": 1,
+	"useAnimation": 5,
+	"useTime": 5,
+	"damage": 1,
+	"knockback": 1,
+	"useSound": 1,
+	"autoReuse": true,
+	"useTurn": true,
+	"melee": true,	
+
+	
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

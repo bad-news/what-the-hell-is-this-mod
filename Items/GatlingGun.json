@@ -1,0 +1,27 @@
+{
+	"displayName": "Gatling Gun",
+	"size": [92,60],
+	"maxStack": 1,
+	"value": [10,0,0,0],	
+	"rare": 8,
+	"tooltip": "'A Gatling Gun. Run.'",
+	"useStyle": 5,
+	"useAnimation": 3,
+	"useTime": 1,
+	"damage": 93,
+	"knockBack": 4,
+	"useSound": 11,
+	"autoReuse": true,
+	"crit":40,
+	"noMelee": true,
+	"ranged": true,	
+	"shoot": 89,
+	"shootSpeed": 12,
+
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

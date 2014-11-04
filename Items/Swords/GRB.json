@@ -1,0 +1,25 @@
+{
+	"displayName": "GRB",
+	"size": [40,60],
+	"maxStack": 1,
+	"value": [0,0,10,0],	
+	"rare": 7,
+	"tooltip": "Why not RGB, you ask? Because, You'd rather have a gory red balloon than a red gory balloon. Don't ask...",
+	"useStyle": 1,
+	"useAnimation": 20,
+	"useTime": 20,
+	"damage": 80,
+	"knockback": 3,
+	"useSound": 1,
+	"autoReuse": true,
+	"useTurn": true,
+	"melee": true,	
+
+	
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

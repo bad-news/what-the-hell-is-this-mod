@@ -1,0 +1,25 @@
+{
+	"displayName": "R",
+	"size": [48,48],
+	"maxStack": 1,
+	"value": [0,1,0,0],	
+	"rare": 7,
+	"tooltip": "The R stand for Russia because it's red.",
+	"useStyle": 1,
+	"useAnimation": 24,
+	"useTime": 24,
+	"damage": 255,
+	"knockback": 3,
+	"useSound": 1,
+	"autoReuse": true,
+	"useTurn": true,
+	"melee": true,	
+
+	
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

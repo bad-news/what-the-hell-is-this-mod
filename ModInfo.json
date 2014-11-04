@@ -1,0 +1,7 @@
+{
+	"internalName":"Testmod",
+	"displayName":"Test Mod",
+	"author":"bad_news",
+	"info":"",
+	"modReferences":["BaseMod"]
+}

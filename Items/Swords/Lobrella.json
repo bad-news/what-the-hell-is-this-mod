@@ -1,0 +1,26 @@
+{
+	"displayName": "???",
+	"size": [50,50],
+	"maxStack": 1,
+	"value": [0,5,37,29],	
+	"rare": 6,
+	"tooltip": "The Lobsters are coming for you.",
+	"useStyle": 1,
+	"useAnimation": 26,
+	"useTime": 6,
+	"damage": 66,
+	"knockBack": 10,
+	"useSound": 1,
+	"autoReuse": true,
+	"useTurn": true,
+	"melee": true,
+	"pick": 166,
+	"axe": 166,
+	
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

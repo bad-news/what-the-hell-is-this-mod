@@ -1,0 +1,26 @@
+{
+	"displayName": "Bang",
+	"size": [28,28],
+	"maxStack": 1,
+	"value": [99,0,0,0],	
+	"rare": 8,
+	"tooltip": "You can 'Bang' things. Not like that you horrible person. Also not related to Firefox.",
+	"useStyle": 1,
+	"useAnimation": 100,
+	"useTime": 100,
+	"damage": 666666,
+	"knockBack": 100,
+	"useSound": 1,
+	"autoReuse": true,
+	"useTurn": true,
+	"melee": true,
+	"pick": 666,
+	"axe": 666,
+	
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

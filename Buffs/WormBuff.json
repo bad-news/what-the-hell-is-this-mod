@@ -1,0 +1,8 @@
+{
+	"displayName": "Worm Buff",
+	"tip": "Revered Among the Worm Kind!",
+	"debuff": true,
+	"vanityPet": false,
+	"lightPet": false,
+	"enchantment": false
+}

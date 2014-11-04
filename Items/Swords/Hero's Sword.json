@@ -1,0 +1,25 @@
+{
+	"displayName": "Hero's Sword",
+	"size": [58,62],
+	"maxStack": 1,
+	"value": [10,0,0,0],	
+	"rare": 7,
+	"tooltip": "Suprisingly high tech for such an old sword.",
+	"useStyle": 1,
+	"useAnimation": 18,
+	"useTime": 18,
+	"damage": 104,
+	"knockback": 3,
+	"useSound": 1,
+	"autoReuse": true,
+	"useTurn": true,
+	"melee": true,	
+
+	
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

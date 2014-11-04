@@ -1,0 +1,24 @@
+{
+	"displayName": "True Breaker Blade",
+	"size": [78,88],
+	"maxStack": 1,
+	"value": [10,0,0,0],	
+	"rare": 8,
+	"useStyle": 1,
+	"useAnimation": 23,
+	"useTime": 23,
+	"damage": 59,
+	"knockback": 13,
+	"useSound": 1,
+	"autoReuse": false,
+	"useTurn": true,
+	"melee": true,	
+
+	
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}

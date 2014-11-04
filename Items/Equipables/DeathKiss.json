@@ -1,0 +1,16 @@
+{
+	"displayName": "Death's Kiss",
+	"size": [36,24],
+	"maxStack": 1,	
+	"value": [10,0,0,0],
+	"rare": 8,
+	"tooltip": [ "Increases length of invincibility after taking damage", "Causes stars to fall, realeases a swarm of bees,", "and increases movement speed upon taking damage."],
+	"accessory": true,
+	
+	"recipes":
+	[{
+		"items": { "Sweetheart Necklace": 1, "Star Veil": 1}, 
+		"tiles": [ "Tinkerer's Workshop" ], 
+		"creates": 1	
+	}]	
+}

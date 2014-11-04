@@ -1,0 +1,14 @@
+{
+	"displayName": "Glowing Stone",
+	"size": [24,22],
+	"maxStack": 1,
+	"value": [0,17,23,0],	
+	"rare": 4,
+	"tooltip": "It glows.",
+	"recipes":
+	[{
+		"items": { "Dirt Block": 1 }, 
+		"tiles": [ "Work Bench" ], 
+		"creates": 1	
+	}]
+}
