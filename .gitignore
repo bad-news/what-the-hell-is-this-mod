@@ -1,2 +1,5 @@
-bin/Debug/CollabMod.vshost.exe
-obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+App.config
+obj/**
+bin/**
+**/Thumbs.db
+**/thumbs.db
