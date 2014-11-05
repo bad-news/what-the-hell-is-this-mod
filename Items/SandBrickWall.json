@@ -10,7 +10,7 @@
 	"useTime": 10,
 	"autoReuse": true,
 	"useTurn": true,
-	"createWall": "DesertRedux:SandBrick",
+	"createWall": "DesertRedux:SandBrickWall",
 	"consumable": true
 	
 	
