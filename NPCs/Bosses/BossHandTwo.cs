@@ -7,7 +7,6 @@ namespace DesertRedux.NPCs
 {
     class BossHandTwo : ModNPC
     {
-        float maxSpeed = 4;
         bool lookAtPlayer = false;
         Vector2 restingLocation;
         bool moveToRestingLoc;
@@ -16,6 +15,7 @@ namespace DesertRedux.NPCs
         int[] attackTypeTimer = new int[4];
         bool flag = false;
         bool spawn = false; //has onspawn stuff been taken care of yet
+        int brotherOne;
 
         public override void AI()
         {
@@ -24,17 +24,6 @@ namespace DesertRedux.NPCs
                 attackType[0] = true;//sets its attack type to 0 (Flies above the player to the left)
                 spawn = true;   //reset so it doesn't run again
             }
-
-            for (int i = 0; i < Main.maxNPCs; i++)
-            {
-                /*if(Main.npc[i].type == NPCDef.byName["MysticalMagics:BossHandOne"].type)
-                    if(Main.npc[i].active)
-                    {
-                        npc.realLife = Main.npc[i].life;
-                        npc.life = npc.realLife;
-                    }*/
-            }
-
             if (npc.target < 0 || npc.target == 255 || Main.player[npc.target].dead || !Main.player[npc.target].active)
                 npc.TargetClosest(true);
             Player target = Main.player[npc.target];
@@ -47,10 +36,7 @@ namespace DesertRedux.NPCs
 
             if (npc.ai[0] > 600)
             {
-                ResetAttackTypes();
-                justCharged = false;
-                int i = Main.rand.Next(0, 3);
-                attackType[i] = true;
+                SetAttackTypes();
                 npc.ai[0] = 0;
             }
 
@@ -121,7 +107,6 @@ namespace DesertRedux.NPCs
             {   //if the npc is below half hp, do some stuff
                 npc.damage *= 2;
                 npc.defense *= 2;
-                this.maxSpeed *= 2;
                 flag = true;
                 return true;
             }
@@ -135,6 +120,43 @@ namespace DesertRedux.NPCs
                 attackType[i] = false;
                 attackTypeTimer[i] = 0;
             }
+        }
+
+        public void SetAttackTypes()
+        {
+            ResetAttackTypes();
+            justCharged = false;
+            int i = Main.rand.Next(0, 3);
+            attackType[i] = true;
+
+            npc.ai[3] = i;
+            if (Main.npc[brotherOne].ai[3] == i)
+            {
+                if (Main.npc[brotherOne].ai[3] == 0 && npc.ai[3] == 0)
+                    return;
+                ResetAttackTypes();
+                int j = Main.rand.Next(0, 3);
+
+                if (j != i)
+                {
+                    attackType[j] = true;
+                    return;
+                }
+                else
+                    SetAttackTypes();
+            }
+        }
+
+        public override void HitEffect(int hitDirection, double damage, bool isDead)
+        {
+            if (isDead)
+                if (Main.npc[brotherOne].active)
+                {
+                    npc.value = 0;
+                    npc.boss = false;
+                }
+            for (int i = 0; i < 50; i++)
+                Dust.NewDust(npc.position, npc.width, npc.height, 148, (float)(2 * hitDirection), -2f, 0, default(Color), 1f);
         }
     }
 }

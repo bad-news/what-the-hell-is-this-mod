@@ -1,7 +1,7 @@
 ﻿{
     "displayName": "Eyerok",
     "size": [ 32, 96 ],
-    "texture": "Textures/NPCs/Eyerok1",
+    "texture": "NPCs/Bosses/Eyerok1",
     "scale": 2,
     "frameCount": 1,
     "value": [ 0, 2, 0, 0 ],
