@@ -1,0 +1,17 @@
+{
+	"displayName": "Bright Sandstone Wall",
+	"size": [16,16],
+	"maxStack": 999,
+	"value": [0,0,1,50],	
+	"rare": 9,
+	"tooltip": "You shouldn't have this.",	
+	"useStyle": 1,
+	"useAnimation": 15,
+	"useTime": 10,
+	"autoReuse": true,
+	"useTurn": true,
+	"createWall": "DesertRedux:SandBrick",
+	"consumable": true,
+	
+	
+}
