@@ -3,7 +3,7 @@
 using TAPI;
 using Terraria;
 
-namespace MysticalMagics.NPCs
+namespace DesertRedux.NPCs
 {
     class BossHandOne : ModNPC
     {

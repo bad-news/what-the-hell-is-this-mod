@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using TAPI;
 using Terraria;
 
-namespace MysticalMagics
+namespace DesertRedux
 {
     class Helper
     {
@@ -80,7 +80,8 @@ namespace MysticalMagics
             codeEntity.velocity.Y = distanceY * 5f / totalDistance * chargeSpeed;
         }
 
-        /*  Checks if an npc is in a certain range of the player.
+        /*
+         * Checks if an npc is in a certain range of the player.
          *  target: The target of the npc
          *  npc: the npc itsself.
          *  range: the distance you want to check.
@@ -119,7 +120,7 @@ namespace MysticalMagics
          * movement: how fast it moves to the location
          * mult: tbh, not entirely sure what this does. you probably shouldn't mess with it.
          */
-        public static void MoveToLocation(CodableEntity codeEntity, Vector2 location, float movement = 0.07f, float mult = 6f)  //copied mostly from terraria's source code, EoC
+        public static void MoveToLocation(CodableEntity codeEntity, Vector2 location, float moveSpeed = 0.07f, float mult = 6f)  //copied mostly from terraria's source code, EoC
         {
             float distX = location.X - codeEntity.Center.X;
             float distY = location.Y - codeEntity.Center.Y;
@@ -131,39 +132,39 @@ namespace MysticalMagics
 
             if (codeEntity.velocity.X < distX)
             {
-                codeEntity.velocity.X += movement;
+                codeEntity.velocity.X += moveSpeed;
                 if (codeEntity.velocity.X < 0f && distX > 0f)
                 {
-                    codeEntity.velocity.X += movement;
+                    codeEntity.velocity.X += moveSpeed;
                 }
             }
             else
             {
                 if (codeEntity.velocity.X > distX)
                 {
-                    codeEntity.velocity.X -= movement;
+                    codeEntity.velocity.X -= moveSpeed;
                     if (codeEntity.velocity.X > 0f && distX < 0f)
                     {
-                        codeEntity.velocity.X -= movement;
+                        codeEntity.velocity.X -= moveSpeed;
                     }
                 }
             }
             if (codeEntity.velocity.Y < distY)
             {
-                codeEntity.velocity.Y += movement;
+                codeEntity.velocity.Y += moveSpeed;
                 if (codeEntity.velocity.Y < 0f && distY > 0f)
                 {
-                    codeEntity.velocity.Y += movement;
+                    codeEntity.velocity.Y += moveSpeed;
                 }
             }
             else
             {
                 if (codeEntity.velocity.Y > distY)
                 {
-                    codeEntity.velocity.Y -= movement;
+                    codeEntity.velocity.Y -= moveSpeed;
                     if (codeEntity.velocity.Y > 0f && distY < 0f)
                     {
-                        codeEntity.velocity.Y -= movement;
+                        codeEntity.velocity.Y -= moveSpeed;
                     }
                 }
             }

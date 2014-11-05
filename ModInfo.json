@@ -1,7 +1,7 @@
 {
-	"internalName":"Testmod",
+	"internalName":"DesertRedux",
 	"displayName":"Test Mod",
-	"author":"bad_news",
+	"author":"bad_news, BlueRaven",
 	"info":"",
 	"modReferences":["BaseMod"]
 }
