@@ -11,7 +11,7 @@
 	"autoReuse": true,
 	"useTurn": true,
 	"createWall": "DesertRedux:SandBrick",
-	"consumable": true,
+	"consumable": true
 	
 	
 }
