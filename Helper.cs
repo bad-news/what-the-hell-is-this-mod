@@ -80,6 +80,13 @@ namespace DesertRedux
             codeEntity.velocity.Y = distanceY * 5f / totalDistance * chargeSpeed;
         }
 
+        public static Player GetTarget(NPC npc)
+        {
+            if (npc.target < 0 || npc.target == 255 || Main.player[npc.target].dead || !Main.player[npc.target].active)
+                npc.TargetClosest(true);
+            return Main.player[npc.target];
+        }
+
         /*
          * Checks if an npc is in a certain range of the player.
          *  target: The target of the npc

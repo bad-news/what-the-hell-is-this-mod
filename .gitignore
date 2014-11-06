@@ -3,3 +3,12 @@ obj/**
 bin/**
 **/Thumbs.db
 **/thumbs.db
+NPCs/Bosses/CorruptPharoh.cs
+NPCs/Bosses/CorruptPharoh.json
+NPCs/Bosses/PharohHandLeft.cs
+NPCs/Bosses/PharohHandLeft.json
+NPCs/Bosses/PharohHandRight.cs
+NPCs/Bosses/PharohHandRight.json
+NPCs/Bosses/CorruptPharoh.png
+NPCs/Bosses/PharohHandLeft.png
+NPCs/Bosses/PharohHandRight.png
