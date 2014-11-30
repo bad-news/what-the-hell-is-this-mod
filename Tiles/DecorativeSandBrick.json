@@ -1,0 +1,16 @@
+{
+	"displayName": "Decorative Sandstone Brick",
+	"size": [1,1],
+	"frameWidth": 16,
+	"frameHeight": 16,
+	"solid": true,
+	"blocksLight": true,
+	"blocksSun": true,
+	"mergeDirt": true,
+	"drop": "DesertRedux:DecorativeSandBrick",
+	"dust": 0,
+	//"sound": 1,
+	//"soundGroup": 21,	
+	"tileMerge": ["#NormalTiles", "#!Ores"],
+	"mapColor": [191, 174, 96]
+}

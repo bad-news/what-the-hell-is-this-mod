@@ -4,5 +4,6 @@
 	"light": false,
 	"blend": 0,
 	"dust": 0,	
+	"drop":"DesertRedux:SandBrickWall",
 	"mapColor": [121, 115, 81]	
 }
