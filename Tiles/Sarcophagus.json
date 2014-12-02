@@ -1,0 +1,19 @@
+{
+	"displayName": "Sarcophagus",
+	"size": [2, 4],
+	"frameWidth": 16,
+	"frameHeight": 16,
+	"frameImportant": true,
+	"solid": false,
+	"blocksLight": false,
+	"blocksSun": false,
+	"mergeDirt": false,	
+	"placementConditions": "flatGround",
+	"placementOrigin": [0,4],	
+	"drop": "DesertRedux:Sarcophagus",
+	"breaksByPick": true,	
+	"sound": 1,
+	"soundGroup": 0,
+	"mapColor": [160, 146, 51],
+	"mapHoverText": "Sarcophagus"
+}

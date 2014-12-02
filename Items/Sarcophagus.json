@@ -1,0 +1,22 @@
+{
+	"displayName": "Sarcophagus",
+	"size": [22,44],
+	"maxStack": 999,
+	"value": [0,0,0,0],	
+	"rare": 1,
+	"useStyle": 1,
+	"useAnimation": 15,
+	"useTime": 10,
+	"autoReuse": true,
+	"useTurn": true,
+	"tooltip": "",
+	"createTile": "DesertRedux:Sarcophagus",
+	"consumable": true,	
+	"recipes":
+	[{
+		"items": { }, 
+		"tiles": [ ], 
+		"creates": 1	
+	}]
+}
+}
